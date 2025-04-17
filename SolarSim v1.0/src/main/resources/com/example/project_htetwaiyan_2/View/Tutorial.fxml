@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="698.0" style="-fx-background-color: #0a0a0a;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_htetwaiyan_2.Controller.StartController">
+   <children>
+      <TabPane layoutY="69.0" prefHeight="442.0" prefWidth="698.0" style="-fx-background-color: #01678c; -fx-border-color: #42f5bc;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Simulation">
+               <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="389.0" prefWidth="698.0">
+                     <children>
+                        <Button layoutX="4.0" layoutY="6.0" maxHeight="500.0" maxWidth="500.0" minHeight="0.0" minWidth="0.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="110.0" style="-fx-background-color: #87deb8; -fx-background-radius: 9;" text="Start">
+                           <font>
+                              <Font name="Calibri Bold" size="26.0" />
+                           </font>
+                        </Button>
+                        <TextArea editable="false" layoutX="4.0" layoutY="61.0" prefHeight="55.0" prefWidth="193.0" text="This is the start button. Click this to start the simulation!" wrapText="true">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </TextArea>
+                        <Button layoutX="4.0" layoutY="135.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="127.0" style="-fx-background-color: #87deb8; -fx-background-radius: 5;" text="About Programmer">
+                           <font>
+                              <Font name="Calibri Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <TextArea editable="false" layoutX="4.0" layoutY="177.0" prefHeight="55.0" prefWidth="193.0" text="Click this to see who created this simulator!" wrapText="true">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </TextArea>
+                        <ColorPicker layoutX="4.0" layoutY="253.0" prefHeight="28.0" prefWidth="127.0" promptText="Planet Color" style="-fx-background-radius: 4;" />
+                        <TextArea editable="false" layoutX="4.0" layoutY="287.0" prefHeight="55.0" prefWidth="193.0" text="Choose a colour to beautify your simulation!" wrapText="true">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </TextArea>
+                        <Button layoutX="216.0" layoutY="6.0" minHeight="0.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #f06262; -fx-background-radius: 7;" text="Reset">
+                           <font>
+                              <Font name="Calibri Bold" size="22.0" />
+                           </font>
+                        </Button>
+                        <TextArea editable="false" layoutX="216.0" layoutY="52.0" prefHeight="55.0" prefWidth="174.0" text="Click this to reset the simulation!" wrapText="true">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea editable="false" layoutX="216.0" layoutY="114.0" prefHeight="74.0" prefWidth="148.0" text="X-Velocity: Y-Velocity:" wrapText="true">
+                           <font>
+                              <Font name="Agency FB Bold" size="20.0" />
+                           </font>
+                        </TextArea>
+                        <Button layoutX="216.0" layoutY="194.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="47.0" text="&lt;">
+                           <font>
+                              <Font name="Calibri Bold" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="268.0" layoutY="194.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="43.0">
+                           <font>
+                              <Font name="Arial" size="19.0" />
+                           </font>
+                        </Button>
+                        <Rectangle fx:id="PauseSymbol2" arcHeight="5.0" arcWidth="5.0" height="20.0" layoutX="294.0" layoutY="204.0" stroke="BLACK" strokeType="INSIDE" width="7.0" />
+                        <Button layoutX="316.0" layoutY="194.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="47.0" text="&gt;">
+                           <font>
+                              <Font name="Calibri Bold" size="22.0" />
+                           </font>
+                        </Button>
+                        <Rectangle fx:id="PauseSymbol1" arcHeight="5.0" arcWidth="5.0" height="20.0" layoutX="280.0" layoutY="204.0" stroke="BLACK" strokeType="INSIDE" width="7.0" />
+                        <Line endX="19.0" endY="-8.0" layoutX="560.0" layoutY="33.0" startX="-38.0" startY="16.5" stroke="WHITE" strokeWidth="2.0" />
+                        <Circle fill="WHITE" layoutX="507.0" layoutY="53.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+                        <TextArea editable="false" layoutX="216.0" layoutY="247.0" prefHeight="120.0" prefWidth="185.0" text="Use the arrows to toggle your focus onto a new celestial body. Use the pause button to pause the simulation temporarily" wrapText="true">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea editable="false" layoutX="432.0" layoutY="96.0" prefHeight="74.0" prefWidth="259.0" text="Drag your mouse to draw a circle! The distance dragged will determine the radius." wrapText="true">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea editable="false" layoutX="432.0" layoutY="177.0" prefHeight="81.0" prefWidth="260.0" text="After the planet is created, click again at any distance from the planet to give it a velocity, shown by a line." wrapText="true">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="435.0" layoutY="291.0" prefHeight="71.0" prefWidth="232.0" text="Have Fun!" textFill="#aafff6">
+                           <font>
+                              <Font name="Forte" size="51.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab text="Settings">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane prefHeight="414.0" prefWidth="698.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="14.0" layoutY="34.0" prefHeight="46.0" prefWidth="122.0" text="Speed" textFill="WHITE">
+                                 <font>
+                                    <Font name="Calibri Bold" size="40.0" />
+                                 </font>
+                              </Label>
+                              <Slider blockIncrement="4.0" layoutX="136.0" layoutY="22.0" majorTickUnit="1.0" max="1.25" min="0.25" prefHeight="71.0" prefWidth="197.0" style="-fx-background-radius: 5;" value="1.25" />
+                              <TextField layoutX="25.0" layoutY="93.0" prefHeight="40.0" prefWidth="101.0" promptText="Enter speed">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <Button layoutX="136.0" layoutY="93.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" style="-fx-background-color: #42f5bc; -fx-background-radius: 7;" text="Input">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <TextArea layoutX="26.0" layoutY="148.0" prefHeight="136.0" prefWidth="273.0" text="Adjust the slider to control the speed of the simulation to your liking. Alternatively, you can enter a speed value, ranging from 0.25 to 1.25 inclusive." wrapText="true">
+                                 <font>
+                                    <Font name="Calibri" size="17.0" />
+                                 </font>
+                              </TextArea>
+                              <Label alignment="CENTER" layoutX="397.0" layoutY="35.0" prefHeight="46.0" prefWidth="101.0" text="Focus" textFill="WHITE">
+                                 <font>
+                                    <Font name="Calibri Bold" size="40.0" />
+                                 </font>
+                              </Label>
+                              <ToggleButton layoutX="504.0" layoutY="31.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="116.0" style="-fx-background-color: #f05454; -fx-background-radius: 10;" text="Off">
+                                 <font>
+                                    <Font name="Calibri Bold" size="30.0" />
+                                 </font>
+                              </ToggleButton>
+                              <TextArea layoutX="397.0" layoutY="99.0" prefHeight="114.0" prefWidth="273.0" text="Toggle the button to enable or diasble Focus mode! In Focus mode, all buttons and controls, except the Settings button, are hidden." wrapText="true">
+                                 <font>
+                                    <Font name="Calibri" size="17.0" />
+                                 </font>
+                              </TextArea>
+                              <Button layoutX="347.0" layoutY="242.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="139.0" style="-fx-background-color: #f05454; -fx-background-radius: 10;" text="Exit">
+                                 <font>
+                                    <Font name="Calibri Bold" size="31.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="506.0" layoutY="242.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="139.0" style="-fx-background-color: #f05454; -fx-background-radius: 10;" text="Quit">
+                                 <font>
+                                    <Font name="Calibri Bold" size="31.0" />
+                                 </font>
+                              </Button>
+                              <TextArea layoutX="345.0" layoutY="309.0" prefHeight="63.0" prefWidth="336.0" text="Click Exit to exit the Settings page, and Quit to quit the simulation." wrapText="true">
+                                 <font>
+                                    <Font name="Calibri" size="17.0" />
+                                 </font>
+                              </TextArea>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="281.0" layoutY="14.0" prefHeight="49.0" prefWidth="139.0" text="Tutorial" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="42.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

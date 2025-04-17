@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="392.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_htetwaiyan_2.Controller.StartController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="392.0" layoutX="-2.0" stroke="BLACK" strokeType="INSIDE" width="403.0" />
+      <ImageView fitHeight="220.0" fitWidth="347.0" layoutX="33.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../AboutP.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="70.0" layoutY="298.0" text="By Htet Wai Yan" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="39.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
